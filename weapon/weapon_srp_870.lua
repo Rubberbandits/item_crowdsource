@@ -1,7 +1,7 @@
-ITEM.Name = "Benelli M1014"
+ITEM.Name = "Remington 870"
 ITEM.Desc = "Placeholder description text! Report me."
-ITEM.Model = "models/weapons/tfa_ins2/w_m1014.mdl"
-ITEM.WeaponClass = "tfa_ins2_m1014"
+ITEM.Model = "models/weapons/w_remington_m870.mdl"
+ITEM.WeaponClass = "tfa_remington_m870"
 ITEM.Weight = 4
 ITEM.SafetyPos = Vector(0,0,0)
 ITEM.SafetyAng = Angle(-12.4, 0, 0)
@@ -13,5 +13,5 @@ ITEM.LookAt 		= Vector( -90, -4.82, 4.83 )
 ITEM.SelfRepairCondition = 70
 ITEM.AmmoType = "12ga"
 ITEM.License = LICENSE_BLACK;
-ITEM.BulkPrice = 225000
+ITEM.BulkPrice = 60000
 ITEM.Slot = 2

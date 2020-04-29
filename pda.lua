@@ -1,4 +1,4 @@
--- This file was converted to Kingston item system by Niggerlicious conversion kit --
+
 ITEM.Name =  "PDA";
 ITEM.Desc =  "A run of the mill PDA common all through-out the Zone. Its usefulness has every stalker carrying one from here to the CNPP.";
 ITEM.Model =  "models/kali/miscstuff/stalker/pda.mdl";
@@ -58,6 +58,20 @@ ITEM.functions.PowerOff = {
 	SelectionName = "Turn Off",
 	OnUse = function(item)
 		item:SetVar("Power", false)
+		
+		return true
+	end,
+	CanRun = function(item)
+		return item:GetVar("Power", false)
+	end,
+}
+ITEM.functions.View = {
+	SelectionName = "View",
+	OnUse = function(item)
+		if CLIENT then
+			GAMEMODE.PDAMenu = vgui.Create("zc_pda")
+			CCP.PlayerMenu:Close()
+		end
 		
 		return true
 	end,

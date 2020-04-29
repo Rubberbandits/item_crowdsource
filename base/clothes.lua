@@ -17,7 +17,7 @@ BASE.Vars = {
 	SuitClass = "",
 }
 BASE.UseDurability = true;
-BASE.DegradationProtection = 0; -- a percentage: 100% allows no durability damage, 0% allows full durability damage.
+BASE.DegradationProtection = 75; -- a percentage: 100% allows no durability damage, 0% allows full durability damage.
 BASE.HandsModel = {
 	body = "100000000",
 	model = "models/poc/stalker_viewmodels/c_sunrise.mdl",
@@ -61,7 +61,7 @@ BASE.functions.WearHelmet = {
 	OnUse = function( item )
 		local metaitem = GAMEMODE:GetItemByID( item:GetClass() );
 	
-		item:SetVar( "HelmetEquipped", true );
+		item:SetVar( "HelmetEquipped", true, nil, true );
 		
 		--engine/occlusionproxy
 		
@@ -84,7 +84,7 @@ BASE.functions.RemoveHelmet = {
 	OnUse = function( item )
 		local metaitem = GAMEMODE:GetItemByID( item:GetClass() );
 	
-		item:SetVar( "HelmetEquipped", false );
+		item:SetVar( "HelmetEquipped", false, nil, true );
 		
 		if SERVER then
 			item:Transmit()

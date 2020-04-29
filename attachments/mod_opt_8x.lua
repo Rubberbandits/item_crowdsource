@@ -1,14 +1,13 @@
-ITEM.Name = "8.7x Sight"
-ITEM.Desc = "A sight which connects to a Type A mount. Used on the Mosin."
+ITEM.Name = "8x Rifle Scope"
+ITEM.Desc = "A very high end eight power rifle scope."
 ITEM.Model = "models/props_junk/cardboard_box004a.mdl"
-ITEM.Attachment = "ins2_si_mx4"
-ITEM.CanAttachTo = {
-	gun_common_sks = true,
-	gun_common_mosin = true,
-	gun_rare_svu = true,
+ITEM.Attachment = {
+	cod_scope_7x = true,
+	tfa_ayykyu_sv98_scope = true,
+	ins2_si_mx4 = true,
 }
 ITEM.RequiredUpgrades = {
-    mount_opt_a = true,
+	generic_opt_mount = true
 }
 ITEM.AttachmentSlot = "optic"
 ITEM.Weight = 0.25

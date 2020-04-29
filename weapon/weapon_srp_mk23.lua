@@ -1,7 +1,7 @@
-ITEM.Name = "USP Match"
-ITEM.Desc = "A specialized USP with a compensator and more finely machined parts. A weapon for Stalkers not content with regular pistols.  Uses .45 ACP."
-ITEM.Model = "models/weapons/tfa_ins2/w_usp_match.mdl"
-ITEM.WeaponClass = "tfa_ins2_usp_match"
+ITEM.Name = "Mk 23"
+ITEM.Desc = "An oversized .45 for Specialists or people who need to break necks when they pistol whip. Prefered by spies and Mercs."
+ITEM.Model = "models/weapons/tfa_ins2/w_mk23.mdl"
+ITEM.WeaponClass = "tfa_ins2_mk23"
 ITEM.Weight = 1.25
 ITEM.SafetyPos = Vector(0,0,0)
 ITEM.SafetyAng = Angle(-12.4, 0, 0)
@@ -13,4 +13,4 @@ ITEM.LookAt 		= Vector( 0, 0, 0 );
 ITEM.SelfRepairCondition = 85
 ITEM.AmmoType = "45acp"
 ITEM.License = LICENSE_BLACK;
-ITEM.BulkPrice = 75000
+ITEM.BulkPrice = 120000

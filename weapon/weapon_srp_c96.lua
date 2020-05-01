@@ -1,5 +1,5 @@
 ITEM.Name = "Mauser C96"
-ITEM.Desc = "One of the earliest semi-automatic pistols to find success on the open market. A relic."
+ITEM.Desc = "One of the earliest semi-automatic pistols to find success on the open market. A relic which commands a premium due to collector interest. Due to a lifetime of neglect, this example is somewhat finicky no matter what anyone does to it, and it takes a true gunsmith to do any real work on it. Uses 7.62x25mm."
 ITEM.Model = "models/weapons/w_c96_one_handed.mdl"
 ITEM.WeaponClass = "tfa_nam_c96"
 ITEM.Weight = 3

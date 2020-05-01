@@ -1,5 +1,5 @@
 ITEM.Name = "AS Val"
-ITEM.Desc = "A subsonic assault rifle using special armor piercing ammunition. Also sought after due to high power and the integrated suppressor. Better suited for general tasks due to better combat ergonomics. Fires 9x39mm."
+ITEM.Desc = "An assault rifle firing subsonic, armor piercing 9x39mm. Sought after due to high power and the integrated suppressor. Better suited for general tasks due to better combat ergonomics."
 ITEM.Model = "models/weapons/tfa_ins2/w_asval.mdl"
 ITEM.WeaponClass = "tfa_ins2_asval"
 ITEM.Weight = 3.6

@@ -1,5 +1,5 @@
 ITEM.Name = "AKS-74U"
-ITEM.Desc = "A modern Kalashnikov rifle with an 4 inch barrel. Gas operated, rotating bolt operating system that is handy and compact. Sold overseas as the Krinkov, it is a favorite of many a warlord. Fires 5.45x39mm."
+ITEM.Desc = "A compact 5.45x39mm AK variant with a 4 inch barrel. Designed for use by paratroopers and tank crews, it is wildly popular among Stalkers operating in tunnels and caves."
 ITEM.Model = "models/weapons/tfa_ins2/w_aks74u.mdl"
 ITEM.WeaponClass = "tfa_ins2_aks74u"
 ITEM.Weight = 2.75

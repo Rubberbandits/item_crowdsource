@@ -1,5 +1,5 @@
 ITEM.Name = "Remington 870"
-ITEM.Desc = "A pump-action shotgun manufactured by Remington. Used in hunting game, or more popularly in the Zone - people. Uses a variety of 12 gauge shells."
+ITEM.Desc = "A pump-action shotgun manufactured by Remington. Used in hunting game or - more popularly in the Zone - people. Uses a variety of 12 gauge shells."
 ITEM.Model = "models/weapons/w_remington_m870.mdl"
 ITEM.WeaponClass = "tfa_remington_m870"
 ITEM.Weight = 4

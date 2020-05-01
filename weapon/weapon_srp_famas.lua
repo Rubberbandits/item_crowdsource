@@ -1,5 +1,5 @@
 ITEM.Name = "FAMAS"
-ITEM.Desc = "A bullpup-styled assault rifle that served as the service rifle of the French military. Oversized carrying handle. Chambered in 5.56x45mm NATO."
+ITEM.Desc = "A bullpup-styled assault rifle that serves as the service rifle of the French military. It has a large carrying handle and a bipod mounted to it. Chambered in 5.56x45mm NATO."
 ITEM.Model = "models/weapons/tfa_ins2/w_famas.mdl"
 ITEM.WeaponClass = "tfa_ins2_famas"
 ITEM.Weight = 4

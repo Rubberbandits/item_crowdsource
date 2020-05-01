@@ -1,5 +1,5 @@
 ITEM.Name = "AK-103"
-ITEM.Desc = "Placeholder description text! Report me."
+ITEM.Desc = "Modern take on the Soviet AKM rifle. Designed in the 90s, it takes aesthetic elements from the AK-74M with polymer furniture. Uses 7.62x39mm."
 ITEM.Model = "models/weapons/w_rif_ak103.mdl"
 ITEM.WeaponClass = "tfa_ins2_ak103"
 ITEM.Weight = 3

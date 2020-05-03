@@ -1,7 +1,7 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Elektron"
-ITEM.Desc =  "A hunk of acrid crust formed around two double A batteries. They have a negative charge."
+ITEM.Desc =  "A hunk of acrid crust formed around two double A batteries. They have a negative charge. Reduces acidic and static shock damage. Minor psi defence. Weakens heat threshold."
 ITEM.Model =  "models/kali/miscstuff/stalker/aid/anti-rad.mdl"
 ITEM.Tier =  0
 ITEM.FOV =  2

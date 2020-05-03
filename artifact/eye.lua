@@ -1,7 +1,7 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Eye"
-ITEM.Desc =  "A tubular shaped, magma-like artifact that resembles a bright yellow- human eye on one end and darkens and tapers off on the other. The eye-portion glows brightly from within. It is pleasantly warm when held and vastly increases the user’s metabolism. It is also said to bring good luck. "
+ITEM.Desc =  "A tubular shaped, magma-like artifact that resembles a bright yellow- human eye on one end and darkens and tapers off on the other. The eye-portion glows brightly from within. It is pleasantly warm when held and vastly increases the userâ€™s metabolism. It is also said to bring good luck. Consumes radiation."
 ITEM.Model =  "models/tnb/stalker/artifacts/eye.mdl"
 ITEM.Tier =  1
 ITEM.FOV =  35

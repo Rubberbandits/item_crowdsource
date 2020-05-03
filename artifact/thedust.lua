@@ -1,14 +1,14 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Dust"
-ITEM.Desc =  "Radioactive dust. Opaque to the eye yet transparent to light. Soft like ash, but appears coarse like sand. Weighs only as much as it's container."
+ITEM.Desc =  "Radioactive dust. Opaque to the eye yet transparent to light. Soft like ash, but appears coarse like sand. Weighs only as much as it's container. Weakens physical resistances."
 ITEM.Model =  "models/z-o-m-b-i-e/st/kitchen_room/st_teapot_01.mdl"
 ITEM.Tier =  2
 ITEM.FOV =  12
 ITEM.CamPos =  Vector( 50, 50, 50 )
 ITEM.LookAt =  Vector( 0, 0, 5 )
 ITEM.Weight =  0;
-ITEM.BulkPrice =  4000
+ITEM.BulkPrice =  100000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1.4,

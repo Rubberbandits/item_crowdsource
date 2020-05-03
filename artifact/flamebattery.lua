@@ -1,7 +1,7 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Flame Battery"
-ITEM.Desc =  "A Battery burned to a cinder. Vaguely shaped like a harp, thin strands of electrostatic material stretch to connect each curve. The texture is rough and corrugated like metal, yet quite light. The surface is lined with glowing reddish cracks that emit ash and embers."
+ITEM.Desc =  "A Battery burned to a cinder. Vaguely shaped like a harp, thin strands of electrostatic material stretch to connect each curve. The texture is rough and corrugated like metal, yet quite light. The surface is lined with glowing reddish cracks that emit ash and embers. Emits radiation. Protects from extreme temperatures."
 ITEM.Model =  "models/kali/miscstuff/stalker/artifacts/battery.mdl"
 ITEM.Tier =  1
 ITEM.FOV =  35

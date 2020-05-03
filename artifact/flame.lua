@@ -1,14 +1,14 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Flame"
-ITEM.Desc =  "A burning core of energy contained within a surprisingly cool shell of mottled glass. The imperfections of its surface render it rough to the touch and slightly opaque. A white vapor constantly emits from its surface."
+ITEM.Desc =  "A burning core of energy contained within a surprisingly cool shell of mottled glass. The imperfections of its surface render it rough to the touch and slightly opaque. A white vapor constantly emits from its surface. Consumes radiation."
 ITEM.Model =  "models/tnb/stalker/artifacts/flame.mdl"
 ITEM.Tier =  2
 ITEM.FOV =  35
 ITEM.CamPos =  Vector( 50, 50, 50 )
 ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  20000
+ITEM.BulkPrice =  35000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,
@@ -31,7 +31,7 @@ ITEM.ArmorValues = {
     -- "Electric Shock"
     [DMG_SHOCK] = 1,
     -- "Radiation"
-    [DMG_RADIATION] = .75,
+    [DMG_RADIATION] = .6,
     -- "Psychic"
     [DMG_PARALYZE] = 1,
 }

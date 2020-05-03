@@ -1,14 +1,14 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Slime"
-ITEM.Desc =  "A dazzling web of transparent, brittle chemical residue. The gaze rolls off it like water and its form seems to subtly change with time. A subtle current of air is detectable around it as well as a cooling effect."
+ITEM.Desc =  "A dazzling web of transparent, brittle chemical residue. The gaze rolls off it like water and its form seems to subtly change with time. A subtle current of air is detectable around it as well as a cooling effect. Weakens chemical resistances."
 ITEM.Model =  "models/tnb/stalker/artifacts/slime.mdl"
 ITEM.Tier =  1
 ITEM.FOV =  35
 ITEM.CamPos =  Vector( 50, 50, 50 )
 ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  7500
+ITEM.BulkPrice =  20000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

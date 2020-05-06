@@ -12,6 +12,6 @@ ITEM.CamPos 		= Vector( 100, 100, 0 )
 ITEM.LookAt 		= Vector( 10, -2, 2 )
 ITEM.SelfRepairCondition = 70
 ITEM.AmmoType = "762x51"
-ITEM.License = LICENSE_BLACK;
+ITEM.License = "C"
 ITEM.BulkPrice = 385000
 ITEM.Slot = 2

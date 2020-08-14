@@ -1,14 +1,14 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Crystal"
-ITEM.Desc =  "This artifact is formed in anomalous zones with intense thermal activity. Actively consumes excessive heat, remaining cool to the touch throughout. Emits radiation."
+ITEM.Desc =  "This artifact is formed in anomalous zones with intense thermal activity. Actively consumes excessive heat, remaining cool to the touch throughout. Consumes radiation."
 ITEM.Model =  "models/tnb/stalker/artifacts/crystal.mdl"
 ITEM.Tier =  2
 ITEM.FOV =  35
 ITEM.CamPos =  Vector( 50, 50, 50 )
 ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  7500
+ITEM.BulkPrice =  87500
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

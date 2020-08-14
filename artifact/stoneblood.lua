@@ -1,14 +1,14 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Stone Blood"
-ITEM.Desc =  "Raw viscera that has formed into a nebulous mass. Varies in color, ranging from light reds to deep blacks. Seems to take on characteristics from that which it is formed. Oozes a sticky, crimson substance. "
+ITEM.Desc =  "Raw viscera that has formed into a nebulous mass. Varies in color, ranging from light reds to deep blacks. Seems to take on characteristics from that which it is formed. Oozes a sticky, crimson substance. Emits radiation."
 ITEM.Model =  "models/kali/miscstuff/stalker/artifacts/stone blood.mdl"
 ITEM.Tier =  1
 ITEM.FOV =  35
 ITEM.CamPos =  Vector( 50, 50, 50 )
 ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  7500
+ITEM.BulkPrice =  32500
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

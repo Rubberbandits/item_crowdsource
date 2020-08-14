@@ -8,7 +8,7 @@ ITEM.FOV =  7
 ITEM.CamPos =  Vector( 50, 50, 50 )
 ITEM.LookAt =  Vector( 0, 0, 0 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  6
+ITEM.BulkPrice =  37500
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

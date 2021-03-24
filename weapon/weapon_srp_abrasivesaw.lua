@@ -1,5 +1,5 @@
 ITEM.Name = "Stihl Abrasive Saw"
-ITEM.Desc = "A gas-powered chop saw with a gnarly blade capable of cutting through concrete and steel. And other things."
+ITEM.Desc = "A fuel-powered chop saw with a gnarly blade capable of cutting through concrete and steel. And other things."
 ITEM.Model = "models/weapons/tfa_nmrih/w_me_abrasivesaw.mdl"
 ITEM.WeaponClass = "tfa_nmrih_asaw"
 ITEM.Weight = 10

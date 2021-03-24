@@ -1,5 +1,5 @@
 ITEM.Name = "Steyr M9-A1"
-ITEM.Desc = "A devilishly handsome handgun from Austrian manufacturer Steyr. Its very sharp grip angle makes it point very well."
+ITEM.Desc = "A devilishly handsome handgun from Austrian manufacturer Steyr. Its very sharp grip angle makes it point very well. Uses 9x19mm."
 ITEM.Model = "models/smc/weapons/steyr-m9a1/w_steyr-m9a1.mdl"
 ITEM.WeaponClass = "tfa_smc_m9a1"
 ITEM.Weight = 2

@@ -9,7 +9,11 @@ BASE.WeaponType = "primary";
 BASE.DegradeRate = 0.5;
 BASE.StartDurability = 100; -- would not recommend you modify, modify DegrateRate!
 BASE.UseDurability = true;
+BASE.NoDefaultAtts = true
 BASE.SellDurability = 50;
+BASE.W = 4
+BASE.H = 2
+BASE.HasEquipSlot = true
 BASE.functions = {};
 BASE.functions.Equip = {
 	SelectionName = "Equip",
@@ -18,16 +22,35 @@ BASE.functions.Equip = {
 		local MetaItem = GAMEMODE:GetItemByID( item:GetClass() );
 		local weapon;
 		
-		if( item:GetVar( "Durability", 0 ) < 1 ) then
+		if( item.UseDurability and item:GetVar( "Durability", 0 ) < 1 ) then
 		
 			if( SERVER ) then
 			
-				item:Owner():Notify( Color(255,255,255), "This weapon is broken." );
+				item:Owner():Notify( nil, Color(255,255,255), "This weapon is broken." );
 				
 			end
 			
 			return false;
 			
+		end
+		
+		local count = 0
+		local tertiary = 0
+		for k,v in next, item:Owner().EquippedWeapons or {} do
+			local wep_item = GAMEMODE.g_ItemTable[v]
+			if !wep_item.TertiarySlot then
+				count = count + 1
+			else
+				tertiary = tertiary + 1
+			end
+		end
+
+		if count > 2 or (item.TertiarySlot and tertiary > 1) then
+			if SERVER then
+				item:Owner():Notify(nil, Color(255,0,0), "You have too many weapons equipped!")
+			end
+			
+			return false
 		end
 		
 		if( SERVER ) then
@@ -46,8 +69,15 @@ BASE.functions.Equip = {
 			end
 		
 			weapon:SetClip1(item:GetVar("Clip1", 0))
-			weapon.JamChance = item:GetJamChance()
+			if item.JamChance then
+				weapon.JamChance = item:GetJamChance()
+			end
 		
+		end
+		
+		if item.HasEquipSlot then
+			item.x = -1
+			item.y = -1
 		end
 		
 		item:SetVar( "Equipped", true );
@@ -63,7 +93,21 @@ BASE.functions.Equip = {
 		
 	end,
 	CanRun = function( item )
-
+		local count = 0
+		local tertiary = 0
+		for k,v in next, item:Owner().EquippedWeapons or {} do
+			local wep_item = GAMEMODE.g_ItemTable[v]
+			if !wep_item.TertiarySlot then
+				count = count + 1
+			else
+				tertiary = tertiary + 1
+			end
+		end
+		
+		if count > 1 or (item.TertiarySlot and tertiary > 0) then
+			return false
+		end
+		
 		if item:Owner().EquippedWeapons and item:Owner().EquippedWeapons[item.WeaponClass] then
 			return false
 		end
@@ -97,6 +141,13 @@ BASE.functions.Unequip = {
 				
 			end
 		
+		end
+		
+		if item.HasEquipSlot then
+			local x, y = item:FindBestPosition()
+			
+			item.x = x
+			item.y = y
 		end
 		
 		item:SetVar( "Equipped", false );
@@ -243,11 +294,13 @@ function BASE:OnDisconnected()
 	end
 end
 function BASE:GetJamChance()
-	local chance = self.JamChance or 0.04
+	if !self.JamChance then return end
+
+	local chance = (self.JamChance * 50) or 0.04
 	for k,v in next, self:GetVar("Upgrades", {}) do
 		local upgrade = GAMEMODE.Upgrades[k]
 		if upgrade.JamChanceModifier then
-			chance = math.Clamp(chance - upgrade.JamChanceModifier, 0.001, 1)
+			chance = math.Clamp(chance - upgrade.JamChanceModifier, 0.00001, 1)
 		end
 	end
 	
@@ -288,4 +341,9 @@ function BASE:OnPlayerDeath()
 end
 function BASE:OnUnloadItem()
 	self:Owner().EquippedWeapons[self.WeaponClass] = nil;
+end
+function BASE:Paint(pnl, w, h)
+	if self:GetVar("Equipped", false) and !pnl.PaintingDragging then
+		kingston.gui.FindFunc(pnl, "Paint", "ItemDurability", w, h, self)
+	end
 end

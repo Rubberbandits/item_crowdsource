@@ -1,14 +1,11 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Moonlight"
-ITEM.Desc =  "A solitary mote of purest energy held within what appears to be thick, translucent ceramic. Occasionally gives off strong static discharges and is far heavier than it appears. Strands of energy trace the fingers when held. It gazes into you, calming mind and spirit. Emits radiation. Increases psi resistance."
+ITEM.Desc =  "A solitary mote of purest energy held within what appears to be thick, translucent ceramic. Occasionally gives off strong static discharges and is far heavier than it appears. Strands of energy trace the fingers when held. It gazes into you, calming mind and spirit."
 ITEM.Model =  "models/tnb/stalker/artifacts/moonlight.mdl"
 ITEM.Tier =  1
-ITEM.FOV =  35
-ITEM.CamPos =  Vector( 50, 50, 50 )
-ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  160000
+ITEM.BulkPrice =  40000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

@@ -1,14 +1,11 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Shell"
-ITEM.Desc =  "Fungus like metal plates interconnected by brown, root like growths. The connection tapers towards the middle and shimmers with forces unseen. Merges with the usersâ€™ nervous system and vastly increases endurance. Emits radiation."
+ITEM.Desc =  "Fungus like metal plates interconnected by brown, root like growths. The connection tapers towards the middle and shimmers with forces unseen. Merges with the users’ nervous system and vastly increases endurance. Emits radiation."
 ITEM.Model =  "models/tnb/stalker/artifacts/shell.mdl"
 ITEM.Tier =  2
-ITEM.FOV =  35
-ITEM.CamPos =  Vector( 50, 50, 50 )
-ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  150000
+ITEM.BulkPrice =  40000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

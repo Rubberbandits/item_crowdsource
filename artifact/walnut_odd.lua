@@ -9,11 +9,8 @@ ITEM.ItemSubmaterials = {
 }
 
 ITEM.Tier =  0
-ITEM.FOV =  6
-ITEM.CamPos =  Vector( 50, 50, 50 )
-ITEM.LookAt =  Vector( 0, 0, 0 )
 ITEM.Weight =  2;
-ITEM.BulkPrice =  25000
+ITEM.BulkPrice =  1000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 0.8,

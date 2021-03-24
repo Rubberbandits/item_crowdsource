@@ -1,14 +1,11 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Mama's Beads"
-ITEM.Desc =  "A rotating double helix tipped by colored knobs on each side. It floats above the ground, suspended by a weird magic. Its colors vary from darkest blue to the color of cooling magma. Emits dull reddish emanations and is only found at night, hidden away from prying eyes. Radioactive."
+ITEM.Desc =  "A rotating double helix tipped by colored knobs on each side. It floats above the ground, suspended by a weird magic. Its colors vary from darkest blue to the color of cooling magma. Emits dull reddish emanations and is only found at night, hidden away from prying eyes."
 ITEM.Model =  "models/tnb/stalker/artifacts/mamasbeads.mdl"
 ITEM.Tier =  2
-ITEM.FOV =  35
-ITEM.CamPos =  Vector( 50, 50, 50 )
-ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  110000
+ITEM.BulkPrice =  30000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

@@ -4,11 +4,8 @@ ITEM.Name =  "Snowflake"
 ITEM.Desc =  "A convincing facsimile of serrated, bluish-white ice crystals. Constantly emits a numbing mist of cold and causes condensation all around it. Reacts violently with other artifacts and saps the warmth from the body. Emits radiation."
 ITEM.Model =  "models/tnb/stalker/artifacts/snowflake.mdl"
 ITEM.Tier =  1
-ITEM.FOV =  35
-ITEM.CamPos =  Vector( 50, 50, 50 )
-ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice = 180000
+ITEM.BulkPrice =  75000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

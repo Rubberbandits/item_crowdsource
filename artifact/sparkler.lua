@@ -1,14 +1,11 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Sparkler"
-ITEM.Desc =  "Hardened brown discharge preserved by anomalous forces. Generates strong electromagnetic forces and a static field. Bright energy currents flow across its surface at varying speeds and then dissipate. Emanates occasional metallic ringing noises and radiation."
+ITEM.Desc =  "Hardened brown discharge preserved by anomalous forces. Generates strong electromagnetic forces and a static field. Bright energy currents flow across its surface at varying speeds and then dissipate. Emanates occasional metallic ringing noises."
 ITEM.Model =  "models/tnb/stalker/artifacts/sparkler.mdl"
 ITEM.Tier =  1
-ITEM.FOV =  35
-ITEM.CamPos =  Vector( 50, 50, 50 )
-ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  30000
+ITEM.BulkPrice =  7500
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

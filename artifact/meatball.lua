@@ -1,7 +1,7 @@
 
 ITEM.Base = "artifact"
 ITEM.Name =  "Meatball"
-ITEM.Desc =  "An immaculately polished ball bearing encapsulated by unnatural muscle mass. It can be felt tensing and relaxing in the hand. Consumes radiation."
+ITEM.Desc =  "An immaculately polished ball bearing encapsulated by unnatural muscle mass. It can be felt tensing and relaxing in the hand."
 ITEM.Model =  "models/kali/miscstuff/stalker/artifacts/flame.mdl"
 
 ITEM.ItemSubmaterials = {
@@ -10,11 +10,8 @@ ITEM.ItemSubmaterials = {
 }
 
 ITEM.Tier =  0
-ITEM.FOV =  35
-ITEM.CamPos =  Vector( 50, 50, 50 )
-ITEM.LookAt =  Vector( -3.5, -2, 4 )
 ITEM.Weight =  1;
-ITEM.BulkPrice =  150000
+ITEM.BulkPrice =  30000
 ITEM.ArmorValues = {
     -- "Impact" (blunt)
     [DMG_CRUSH] = 1,

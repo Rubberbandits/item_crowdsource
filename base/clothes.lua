@@ -23,11 +23,19 @@ BASE.HandsModel = {
 	model = "models/poc/stalker_viewmodels/c_sunrise.mdl",
 	skin = 0,
 }
+BASE.W = 2
+BASE.H = 2
+BASE.HasEquipSlot = true
 BASE.functions = {};
 BASE.functions.Equip = {
 	SelectionName = "Equip",
 	OnUse = function( item )
 		local metaitem = GAMEMODE:GetItemByID( item:GetClass() );
+		
+		if item.HasEquipSlot then
+			item.x = -1
+			item.y = -1
+		end
 
 		item:SetVar( "Equipped", true );
 		
@@ -35,10 +43,9 @@ BASE.functions.Equip = {
 			if metaitem.WearModel then
 				item:Owner():SetModelCC( item:GetWearModel() );
 				item:Owner().Uniform = item:GetWearModel();
-				item:Owner():SetBody("")
-			elseif metaitem.Bonemerge then
-				item:Transmit()
 			end
+			
+			item:Transmit()
 			
 			GAMEMODE:SpeedThink( item:Owner() )
 		end
@@ -88,8 +95,8 @@ BASE.functions.RemoveHelmet = {
 		
 		if SERVER then
 			item:Transmit()
-			item:Owner():SetSkin(item:Owner():GetCharFromID( item:Owner():CharID() ).Skingroup)
 			item:Owner():SetSubMaterial()
+			item:Owner():SetSkin(item:Owner():GetCharFromID( item:Owner():CharID() ).Skingroup)
 		end
 		
 		return true
@@ -102,18 +109,32 @@ BASE.functions.Unequip = {
 	SelectionName = "Unequip",
 	OnUse = function( item )
 		local metaitem = GAMEMODE:GetItemByID( item:GetClass() );
-	
+		
+		if item.HasEquipSlot then
+			local x, y = item:FindBestPosition()
+			
+			item.x = x
+			item.y = y
+		end
+		
+		for k,v in next, item:Owner().Inventory do
+			if v.Base == "artifact" and v:GetVar("Equipped", false) then
+				v:CallFunction("Unequip")
+			end
+		end
+		
 		item:SetVar( "Equipped", false );
 		
 		if SERVER then
 			if item.WearModel then
 				item:Owner():SetModelCC( item:Owner().CharModel );
 				item:Owner().Uniform = nil;
-				item:Owner():SetSkin( item:Owner():GetCharFromID( item:Owner():CharID() ).Skingroup );
 				item:Owner():SetBody( item:Owner():GetCharFromID( item:Owner():CharID() ).Body );
 			elseif metaitem.Bonemerge then
 				item:Transmit()
 			end
+			
+			item:Owner():SetSkin( item:Owner():GetCharFromID( item:Owner():CharID() ).Skingroup );
 			
 			if item:GetVar( "Durability", 0 ) < 1 then
 				item:Owner():Notify(nil, Color(255,255,255), "Your suit has broken.")
@@ -220,6 +241,7 @@ function BASE:GetArmorValues()
 	for class,_ in next, self:GetVar("Upgrades", {}) do
 		local upgrade = GAMEMODE.Upgrades[class]
 		if !upgrade then continue end
+		if !upgrade.ArmorValues then continue end
 		
 		for index,mult in next, upgrade.ArmorValues do
 			local num = base_tbl[index] or 1
@@ -335,6 +357,12 @@ function BASE:DummyItemUpdate(ent)
 				ent:SetBodygroup(0, 0)
 			end
 		end
+	end
+end
+
+function BASE:Paint(pnl, w, h)
+	if self:GetVar("Equipped", false) and !pnl.PaintingDragging then
+		kingston.gui.FindFunc(pnl, "Paint", "ItemDurability", w, h, self)
 	end
 end
 

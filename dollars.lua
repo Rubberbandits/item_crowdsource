@@ -1,4 +1,3 @@
-
 ITEM.Name =  "US Dollars";
 ITEM.Desc =  "A fistful of dollars. Nobody will accept this around here.";
 ITEM.Model =  "models/props/cs_assault/Dollar.mdl";
@@ -7,3 +6,9 @@ ITEM.FOV =  13;
 ITEM.CamPos =  Vector( 50, 50, 50 );
 ITEM.LookAt =  Vector( 0, 0, 0 );
 ITEM.BulkPrice =  300;
+ITEM.Stackable = true
+ITEM.W = 2
+ITEM.H = 1
+ITEM.Vars = {
+	Stacked = 1,
+}

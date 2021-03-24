@@ -1,0 +1,11 @@
+ITEM.Name =  "Journal Recovery System";
+ITEM.Desc =  "A disposable security spike with an on-board CPU that has a high chance of failure under load, used to recover PDA journals. Requires some specialist knowledge.";
+ITEM.Model =  "models/stalker/item/handhelds/mini_pda.mdl";
+ITEM.Weight =  .5;
+ITEM.FOV =  12;
+ITEM.CamPos =  Vector( 50, 50, 50 );
+ITEM.LookAt =  Vector( 0, 0, 0 );
+ITEM.PhysicalMass	= 1;
+ITEM.BulkPrice =  120000;
+ITEM.W = 1
+ITEM.H = 1
